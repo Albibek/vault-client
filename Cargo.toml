@@ -1,0 +1,21 @@
+[package]
+name = "vault_client"
+version = "0.0.1"
+authors = [ "Albibek <albibek@gmail.com>" ]
+description = "HashiCorp Vault client library"
+license = "MIT"
+repository = "https://github.com/Albibek/vault-client"
+
+build = "build.rs"
+
+[lib]
+[dependencies]
+hyper = "~0.9"
+url="~1.2"
+serde = "~0.8"
+serde_json = "~0.8"
+error-chain = "~0.5"
+
+[build-dependencies]
+serde_codegen = "0.8"
+
